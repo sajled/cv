@@ -1,0 +1,95 @@
+\documentclass[a4paper]{article}
+% UTF-8
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Czcionka, która sensownie wygląda na monitorze.
+\usepackage{lmodern}
+
+% Język
+\usepackage[polish]{babel}
+% \usepackage[english]{babel}
+
+% Rózne przydatne paczki:
+% - znaczki matematyczne
+\usepackage{amsmath, amsfonts}
+% - wcięcie na początku pierwszego akapitu
+\usepackage{indentfirst}
+% - komenda \url 
+\usepackage{enumitem}
+% - ciasne puntkory
+\usepackage{hyperref}
+% - dołączanie obrazków
+\usepackage{graphics}
+% - szersza strona
+\usepackage[margin=1.5cm]{geometry}
+\frenchspacing
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+% - brak numerów stron
+\newcommand{\cvsection}[2]{%
+  \vspace{5pt}\hrule\vspace{6pt}
+  \begin{minipage}[t]{0.2\textwidth}\footnotesize\textbf{\MakeUppercase{#1}}\end{minipage}%
+  \begin{minipage}[t]{0.78\textwidth}#2\end{minipage}\par}
+\newcommand{\wpis}[3]{\textbf{#1} \hfill #2\\ {\small #3}}
+
+% dane autora
+\author{Łukasz Suchodolski}
+\title{CV -- Łukasz Suchodolski}
+\date{\today}
+
+% początek dokumentu
+\begin{document}
+{\Large\textbf{Łukasz Suchodolski}} \hfill Student informatyki
+
+\cvsection{Kontakt}{%
+  Tel.: +48 535 047 147 \hfill E-mail: suchodolskilukasz9@gmail.com\\
+  Wrocław \hfill GitHub: \href{https://github.com/sajled}{github.com/sajled}}
+
+\cvsection{Wykształcenie}{%
+  \wpis{Uniwersytet Wrocławski}{2026 -- obecnie}{Informatyka}\\[6pt]
+  \wpis{Technikum TEB Edukacja}{2021 -- 2026}{Technik informatyk}}
+
+\cvsection{Doświadczenie}{%
+  \wpis{Hemmersbach -- praktyki}{wrzesien 2024}{Praktykant}
+  \begin{itemize}
+    \item Wykręcanie dysków z laptopów
+    \item Resetowanie telefonów
+  \end{itemize}
+  \vspace{4pt}
+  \wpis{Green Computers -- praktyki}{wrzesien 2022}{Praktykant}
+  \begin{itemize}
+    \item Tworzenie ofert sprzedaży na sklep internetowy i Allegro
+  \end{itemize}}
+
+\cvsection{Projekty}{%
+  \wpis{compare-price}{2026}{\href{https://github.com/sajled/compare-price}{github.com/sajled/compare-price}}
+  \begin{itemize}
+    \item Porównywarka cen kluczy do gier
+  \end{itemize}}
+
+\cvsection{Kwalifikacje}{%
+  \wpis{INF.02 -- Administracja i eksploatacja systemów komputerowych, urządzeń peryferyjnych i lokalnych sieci komputerowych}{styczeń 2023}{}\\[6pt]
+  \wpis{INF.03 -- Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych}{czerwiec 2025}{}}
+
+
+\cvsection{Umiejętności}{%
+  \begin{itemize}
+    \item Język angielski -- B2
+    \item Prawo jazdy kat. B
+    \item Języki programowania: C, C++, Python, JavaScript, PHP
+  \end{itemize}}
+
+\vfill{\tiny Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).}
+\end{document}
+
+
+
+
+
+
+
+
+
+
